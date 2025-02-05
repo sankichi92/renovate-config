@@ -1,2 +1,3 @@
 # renovate-config
-My Renovate configuration
+
+https://docs.renovatebot.com/config-presets/
