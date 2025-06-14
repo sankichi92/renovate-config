@@ -1,0 +1,34 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:recommended",
+    ":timezone(Asia/Tokyo)",
+    ":prHourlyLimitNone",
+    ":label(dependencies)",
+    ":automergePatch",
+  ],
+  schedule: ["* 20-23 * * 5"],
+  packageRules: [
+    {
+      matchManagers: ["bundler"],
+      enabled: false,
+    },
+    {
+      matchManagers: ["npm"],
+      matchDepTypes: ["dependencies", "devDependencies", "peerDependencies"],
+      enabled: false,
+    },
+    {
+      matchManagers: ["cargo"],
+      enabled: false,
+    },
+    {
+      matchManagers: ["github-actions"],
+      enabled: false,
+    },
+    {
+      matchManagers: ["devcontainer"],
+      enabled: false,
+    },
+  ],
+}
