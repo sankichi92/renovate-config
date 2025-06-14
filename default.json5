@@ -19,6 +19,11 @@
       enabled: false,
     },
     {
+      matchPackageNames: ["pnpm"],
+      matchUpdateTypes: ["minor"],
+      automerge: true,
+    },
+    {
       matchManagers: ["cargo"],
       enabled: false,
     },
