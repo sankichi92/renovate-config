@@ -35,6 +35,10 @@
     {
       "matchManagers": ["devcontainer"],
       "enabled": false
+    },
+    {
+      "matchManagers": ["terraform"],
+      "enabled": false
     }
   ]
 }
